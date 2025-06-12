@@ -1,0 +1,21 @@
+package app;
+
+import java.time.ZoneId;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Aula02 {
+
+	public static void main(String[] args) {
+		
+		List<String> l = new ArrayList<>();
+		
+		for(String s : ZoneId.getAvailableZoneIds()) {
+			l.add(s);
+		}
+		System.out.println(l.size());
+		 
+
+	}
+
+}

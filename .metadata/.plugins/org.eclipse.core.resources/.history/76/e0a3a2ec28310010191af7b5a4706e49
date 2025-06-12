@@ -1,0 +1,47 @@
+package app;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Aula04 {
+
+	public static void main(String[] args) {
+		/*
+		LocalDateTime in = LocalDateTime.parse("2025-05-14T14:00:00");
+		LocalDateTime out = LocalDateTime.parse("2025-05-14T16:00:00");
+		
+		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		Duration time = Duration.between(in, out);
+		
+		System.out.println("Horário de Entrada: " + in.format(fmt2));
+		System.out.println("Horário de Saída: " + out.format(fmt2));
+		
+		System.out.println("Tempo de estacionamento em minutos: " + time.toMinutes());
+		
+		final LocalDateTime HORARIO = LocalDateTime.now();
+		
+		System.out.println(HORARIO); */
+		
+		
+		System.out.println("PROGRAMA DE CONTAGEM DE TEMPO");
+		
+		LocalDateTime agora = LocalDateTime.now();
+		LocalDateTime saida = LocalDateTime.now();
+		System.out.println(agora);
+		int n = 20000000000000000;
+		for(int i=0; i<n;i++) {
+			System.out.println(i);
+			
+			if(i==n) {
+				System.out.println(saida);
+			}
+		}
+		Duration tempoDecorrido = Duration.between(agora, saida);
+		System.out.println(tempoDecorrido.toSeconds());
+		
+		
+	}
+
+}

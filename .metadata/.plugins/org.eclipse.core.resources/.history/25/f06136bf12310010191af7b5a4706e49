@@ -1,0 +1,17 @@
+package app;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class Program {
+
+	public static void main(String[] args) {
+		LocalDate date = LocalDate.now();
+		LocalDateTime dateTime = LocalDateTime.now();
+		
+		System.out.println(date);
+		System.out.println(dateTime);
+
+	}
+
+}
